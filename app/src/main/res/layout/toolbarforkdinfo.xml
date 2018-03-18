@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.AppBarLayout android:id="@+id/appbarlayoutKitchenDetails"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|end"
+                android:background="@drawable/ic_cross"
+                android:gravity="center" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|start"
+                android:background="@drawable/ic_menu" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Sompura Rannaghor"
+                android:textColor="@color/colorPrimary" />
+
+
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+

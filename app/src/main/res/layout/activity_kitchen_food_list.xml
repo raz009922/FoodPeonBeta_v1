@@ -1,0 +1,90 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cordo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dcastalia.rrrrrr.Kitchen_food_list">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/buttonInfo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|end"
+                android:background="@drawable/ic_info_outline_black_24dp"
+                android:gravity="center" />
+
+            <Button
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|start"
+                android:background="@drawable/ic_menu" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Sompura Rannaghor"
+                android:textColor="@color/colorPrimary" />
+
+
+        </FrameLayout>
+
+
+        <include
+
+            layout="@layout/toolbar1_layout">
+
+
+        </include>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:clipToPadding="false"
+        android:paddingBottom="30dp"
+        android:src="@drawable/ic_commerce"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_anchor="@id/recyclerView"
+        app:layout_anchorGravity="bottom|right|end"></android.support.design.widget.FloatingActionButton>
+
+
+</android.support.design.widget.CoordinatorLayout>

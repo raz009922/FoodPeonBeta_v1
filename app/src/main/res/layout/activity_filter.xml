@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.dcastalia.rrrrrr.FilterActivity">
+
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TextFilterCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="CATEGORY" />
+
+
+            <TextView
+                android:id="@+id/catBiryani"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextFilterCategory"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:text="Biriyani" />
+
+
+            <CheckBox
+
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/catBiryani"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/catBiryani"
+                android:layout_alignStart="@+id/catBiryani"
+                android:layout_below="@+id/catBiryani"
+                android:text="TextView" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignLeft="@+id/checkBox3"
+                android:layout_alignStart="@+id/checkBox3" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="16dp"
+                android:text="TextView" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView17"
+                android:layout_alignEnd="@+id/checkBox2"
+                android:layout_alignRight="@+id/checkBox2" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView17"
+                android:layout_alignStart="@+id/textView17"
+                android:layout_below="@+id/textView17"
+                android:layout_marginTop="18dp"
+                android:text="TextView" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView18"
+                android:layout_alignEnd="@+id/checkBox4"
+                android:layout_alignRight="@+id/checkBox4" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/textView18"
+                android:layout_alignStart="@+id/textView18"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:text="Others ++"
+                android:textAlignment="textStart"
+                android:gravity="start" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

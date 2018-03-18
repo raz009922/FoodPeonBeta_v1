@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">rrrrrr</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_foods_under_a_kitchen">Kitchen Details</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_nav_test">NavTEst</string>
+    <string name="Help">Help &amp; Support</string>
+    <string name="phone_hint">e.g: 01675119922</string>
+    <string name="invalid_phone_number">invalid number</string>
+    <string name="valid_phone_number">e.g: 01715183557</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title">foodpeon</string>
+
+</resources>

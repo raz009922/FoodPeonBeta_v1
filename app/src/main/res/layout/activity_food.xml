@@ -1,0 +1,112 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dcastalia.rrrrrr.Food_Activity"
+    >
+
+
+
+
+
+<android.support.design.widget.CoordinatorLayout
+
+    android:id="@+id/cordo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <include
+
+            layout="@layout/toolbar1_layout">
+
+
+        </include>
+
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" />
+
+
+
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:clipToPadding="false"
+        android:paddingBottom="30dp"
+        android:src="@drawable/ic_commerce"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_anchor="@id/recyclerView"
+        app:layout_anchorGravity="bottom|right|end">
+
+    </android.support.design.widget.FloatingActionButton>
+
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_default_image"
+            android:padding="2dp"
+            android:scaleType="center" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/activity_nav_test_drawer"
+        app:headerLayout="@layout/nav_header_nav_test"
+        android:layout_gravity="start">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
